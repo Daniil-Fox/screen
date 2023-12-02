@@ -10,6 +10,14 @@
   padding-left: 121px;
   padding-right: 121px;
 
+  @media (min-width: 1921px) {
+    height: 13.7rem;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+    padding-left: 12.1rem;
+    padding-right: 12.1rem;
+  }
+
   @media (min-width: 1536px) and (max-width: 1919px) {
     height: 121px;
     border-radius: 20px;
@@ -17,12 +25,14 @@
     padding-right: 32px;
   }
 
-  @media (min-width: 1366px) and (max-width: 1536px) {
+  @media (min-width: 1366px) and (max-width: 1535px) {
+    height: 121px;
     padding-left: 32px;
     padding-right: 32px;
   }
 
   @media (min-width: 1024px) and (max-width: 1365px) {
+    height: 121px;
     margin: 0;
     padding-left: 32px;
     padding-right: 32px;
@@ -31,12 +41,14 @@
   @media (min-width: 744px) and (max-width: 1023px) {
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0;
     height: 90px;
   }
 
   @include mobile {
     padding: 10px 20px;
     border-radius: 10px;
+    margin: 0;
     height: unset;
   }
 
@@ -46,6 +58,10 @@
 
   &__logo {
     max-width: 212px;
+
+    @media (min-width: 1921px) {
+      max-width: 21.2rem;
+    }
 
     svg {
       width: 100%;
@@ -79,12 +95,20 @@
     align-items: center;
     gap: 20px;
 
-    @media (min-width: 744px) and (max-width: 1023px) {
+    @media (min-width: 1921px) {
+      gap: 2rem;
+    }
+
+    @media (max-width: 1023px) {
       gap: 10px;
     }
 
     &:not(:last-child) {
       margin-right: 24px;
+
+      @media (min-width: 1921px) {
+        margin-right: 2.4rem;
+      }
 
       @include mobile {
         margin-right: 10px;
@@ -99,6 +123,10 @@
       font-weight: 400;
       line-height: normal;
 
+      @media (min-width: 1921px) {
+        font-size: 2.4rem;
+      }
+
       @media (min-width: 744px) and (max-width: 1023px) {
         font-size: 18px;
       }
@@ -111,6 +139,11 @@
     &>svg {
       height: 69px;
       width: 69px;
+
+      @media (min-width: 1921px) {
+        height: 6.9rem;
+        width: 6.9rem;
+      }
 
       path {
         transition: fill .3s ease-in;

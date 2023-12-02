@@ -1,5 +1,9 @@
 html {
   box-sizing: border-box;
+
+  @media (min-width: 1921px) {
+    font-size: calc(100vw / 192);
+  }
 }
 
 *,
@@ -39,17 +43,24 @@ a {
   background-color: #AEA1FF;
   padding: 10px;
 
-  @media (min-width: 1024px) and (max-width: 1365px) {
+  @media (min-width: 1921px) {
+    padding: 1rem;
+  }
+
+  @media (max-width: 1365px) {
     padding: 20px 10px;
     flex-direction: column;
     gap: 10px;
   }
 
-  @media (min-width: 744px) and (max-width: 1023px) {
+  @media (max-width: 1023px) {
     padding: 20px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   @include mobile {
+    flex-direction: column;
     padding: 4px;
     gap: 6px;
   }
@@ -65,11 +76,15 @@ a {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 1536px) and (max-width: 1919px) {
+  @media (min-width: 1921px) {
+    max-width: 122.8rem;
+  }
+
+  @media (max-width: 1919px) {
     max-width: 954px;
   }
 
-  @media (min-width: 1024px) and (max-width: 1365px) {
+  @media (max-width: 1365px) {
     margin: 0;
     gap: 10px;
     max-width: 100%;
@@ -178,13 +193,22 @@ a {
     animation: click 0.3s ease-in 1;
   }
 
-  @media (min-width: 1536px) and (max-width: 1919px) {
+  @media (min-width: 1921px) {
+    width: 36.5rem;
+    height: 9.6rem;
+    padding: 1rem;
+    border-radius: 7.1rem;
+
+    font-size: 2.6rem;
+  }
+
+  @media (max-width: 1919px) {
     width: 312px;
     height: 78px;
 
   }
 
-  @media (min-width: 1366px) and (max-width: 1536px) {}
+  @media (min-width: 1366px) and (max-width: 1535px) {}
 
   @include mobile {
     width: 280px;

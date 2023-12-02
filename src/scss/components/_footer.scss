@@ -6,7 +6,7 @@
   border-radius: 20px;
   padding: 60px 30px;
 
-  @media(max-width: 1024px) {
+  @media (max-width: 1365px) {
     display: block;
   }
 
@@ -21,6 +21,10 @@
 
     &:not(:last-child) {
       margin-bottom: 50px;
+
+      @include mobile {
+        margin-bottom: 34px;
+      }
     }
 
     &--end {

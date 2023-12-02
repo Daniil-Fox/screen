@@ -7,6 +7,13 @@
   padding-top: 113px;
   padding-bottom: 90px;
 
+  @media (min-width: 1921px) {
+    border-radius: 2.5rem;
+    padding: 12rem;
+    padding-top: 11.3rem;
+    padding-bottom: 9rem;
+  }
+
   @media (min-width: 1536px) and (max-width: 1919px) {
     padding-left: 30px;
     padding-top: 82px;
@@ -16,7 +23,7 @@
     border-radius: 20px;
   }
 
-  @media (min-width: 1366px) and (max-width: 1536px) {
+  @media (min-width: 1366px) and (max-width: 1535px) {
     padding-top: 52px;
     padding-left: 30px;
     padding-right: 30px;
@@ -50,12 +57,17 @@
     font-weight: 400;
     line-height: normal;
 
+    @media (min-width: 1921px) {
+      font-size: 6.2rem;
+      margin-bottom: 5rem;
+    }
+
     @media (min-width: 1536px) and (max-width: 1919px) {
       font-size: 46px;
       margin-bottom: 30px;
     }
 
-    @media (min-width: 1366px) and (max-width: 1536px) {
+    @media (min-width: 1366px) and (max-width: 1535px) {
       font-size: 40px;
       margin-bottom: 40px;
     }
@@ -97,11 +109,15 @@
     margin: 24px 21px;
     color: var(--accent-color);
 
+    @media (min-width: 1921px) {
+      margin: 2.4rem 2.1rem;
+    }
+
     @media (min-width: 1536px) and (max-width: 1919px) {
       margin: 10px;
     }
 
-    @media (min-width: 1366px) and (max-width: 1536px) {
+    @media (min-width: 1366px) and (max-width: 1535px) {
       margin: 10px;
     }
 
@@ -117,6 +133,11 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media (min-width: 1921px) {
+        height: 7.8rem;
+        width: 1.98rem;
+      }
 
       @media (min-width: 744px) and (max-width: 1023px) {
         height: 54px;
@@ -150,6 +171,12 @@
     align-items: center;
     justify-content: center;
 
+    @media (min-width: 1921px) {
+      width: 8rem;
+      height: 8rem;
+      border-width: 0.5rem;
+    }
+
     @media (min-width: 744px) and (max-width: 1023px) {
       width: 60px;
       height: 60px;
@@ -174,6 +201,10 @@
       z-index: 2;
       margin-left: -20px;
 
+      @media (min-width: 1921px) {
+        margin-left: -2rem;
+      }
+
       @include mobile {
         margin-left: -5px;
       }
@@ -182,7 +213,14 @@
     &:nth-child(3) {
       z-index: 3;
       margin-left: -30px;
-      margin-left: -10px;
+
+      @media (min-width: 1921px) {
+        margin-left: -3rem;
+      }
+
+      @include mobile {
+        margin-left: -10px;
+      }
     }
   }
 
@@ -196,12 +234,17 @@
     font-weight: 400;
     line-height: normal;
 
+    @media (min-width: 1921px) {
+      margin-bottom: 6rem;
+      font-size: 3rem;
+    }
+
     @media (min-width: 1536px) and (max-width: 1919px) {
       font-size: 20px;
       margin-bottom: 40px;
     }
 
-    @media (min-width: 1366px) and (max-width: 1536px) {
+    @media (min-width: 1366px) and (max-width: 1535px) {
       font-size: 20px;
       margin-bottom: 37px;
     }
@@ -224,11 +267,15 @@
   &__header {
     margin-bottom: 57px;
 
+    @media (min-width: 1921px) {
+      margin-bottom: 5.7rem;
+    }
+
     @media (min-width: 1536px) and (max-width: 1919px) {
       margin-bottom: 70px;
     }
 
-    @media (min-width: 1366px) and (max-width: 1536px) {
+    @media (min-width: 1366px) and (max-width: 1535px) {
       margin-bottom: 42px;
     }
 
@@ -243,7 +290,7 @@
     align-items: flex-end;
     width: 100%;
 
-    @media (min-width: 1024px) and (max-width: 1365px) {
+    @media (max-width: 1365px) {
       display: none;
     }
   }
@@ -258,6 +305,10 @@
 
     flex-shrink: 0;
 
+    @media (min-width: 1921px) {
+      font-size: 2rem;
+    }
+
     @include mobile {
       max-width: 212px;
       text-align: center;
@@ -271,6 +322,11 @@
     position: relative;
 
     padding-right: 0;
+
+    @media (min-width: 1921px) {
+      max-width: 49rem;
+      padding: 0 4rem;
+    }
 
     @include mobile {
       max-width: unset;
@@ -287,9 +343,14 @@
       font-weight: 300;
       line-height: 130%;
 
+      @media (min-width: 1921px) {
+        max-width: 41rem;
+        font-size: 2rem;
+      }
+
       @include mobile {
         font-size: 15px;
-        max-width: unset;
+        max-width: 212px;
         text-align: center;
       }
     }
@@ -303,6 +364,14 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @media (min-width: 1921px) {
+        width: 2rem;
+      }
+
+      @include mobile {
+        width: 25px;
+      }
     }
 
     &::before {
