@@ -889,7 +889,6 @@ a {
   max-width: 490px;
   padding: 0 40px;
   position: relative;
-  padding-right: 0;
 }
 @media (min-width: 1921px) {
   .main__text {
