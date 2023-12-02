@@ -1,5 +1,7 @@
 .footer {
   display: none;
+
+  width: 100%;
   background-color: var(--dark-color);
   border-radius: 20px;
   padding: 60px 30px;
@@ -8,7 +10,10 @@
     display: block;
   }
 
-  width: 100%;
+  @include mobile {
+    border-radius: 10px;
+    padding: 30px 15px;
+  }
 
   &__row {
     display: flex;
@@ -23,21 +28,36 @@
     }
 
     &:first-child {
-      @media (max-width: 744px) {
+      @media (min-width: 744px) and (max-width: 1023px) {
         flex-direction: column-reverse;
         gap: 20px;
       }
+
+      @include mobile {
+        flex-direction: column-reverse;
+        gap: 30px;
+      }
     }
 
-    @media (max-width: 744px) {
+    @media (min-width: 744px) and (max-width: 1023px) {
       flex-direction: column;
+      align-items: center;
+    }
+
+    @include mobile {
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
     }
   }
 
   .logo {
-    @media (max-width: 744px) {
+    @media (min-width: 744px) and (max-width: 1023px) {
       margin-bottom: 50px;
+    }
+
+    @include mobile {
+      margin-bottom: 0;
     }
   }
 

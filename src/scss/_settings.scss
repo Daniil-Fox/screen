@@ -39,14 +39,19 @@ a {
   background-color: #AEA1FF;
   padding: 10px;
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1365px) {
     padding: 20px 10px;
     flex-direction: column;
     gap: 10px;
   }
 
-  @media (max-width: 744px) {
+  @media (min-width: 744px) and (max-width: 1023px) {
     padding: 20px;
+  }
+
+  @include mobile {
+    padding: 4px;
+    gap: 6px;
   }
 }
 
@@ -60,11 +65,11 @@ a {
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 1536px) {
+  @media (min-width: 1536px) and (max-width: 1919px) {
     max-width: 954px;
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1365px) {
     margin: 0;
     gap: 10px;
     max-width: 100%;
@@ -173,13 +178,20 @@ a {
     animation: click 0.3s ease-in 1;
   }
 
-  @media (max-width: 1536px) {
+  @media (min-width: 1536px) and (max-width: 1919px) {
     width: 312px;
     height: 78px;
 
   }
 
-  @media (max-width: 1366px) {}
+  @media (min-width: 1366px) and (max-width: 1536px) {}
+
+  @include mobile {
+    width: 280px;
+    height: 70px;
+
+    font-size: 18px;
+  }
 }
 
 @keyframes click {

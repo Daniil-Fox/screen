@@ -6,11 +6,11 @@
   --content-width: 988px;
   --container-offset: 0;
 
-  @media (max-width: 1536px) {
+  @media (min-width: 1536px) and (max-width: 1919px) {
     --content-width: 890px;
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 1024px) and (max-width: 1366px) {
     --content-width: 920px;
   }
 
